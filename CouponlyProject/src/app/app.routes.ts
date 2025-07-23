@@ -71,7 +71,7 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    loadComponent: () => import('./views/pages/login/login.component').then(m => m.LoginComponent),
+    loadComponent: () => import('./features/authentication/login/login.component').then(m => m.LoginComponent),
     data: {
       title: 'Login Page'
     }
