@@ -83,5 +83,12 @@ export const routes: Routes = [
       title: 'Register Page'
     }
   },
+  {
+    path: 'store',
+    loadComponent: () => import('./features/admin//components/store/store.component').then(m => m.StoreComponent),
+    data: {
+      title: 'Login Page'
+    }
+  },
   { path: '**', redirectTo: 'dashboard' }
 ];
